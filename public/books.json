@@ -1,0 +1,62 @@
+[
+    {
+        "image": "https://i.ibb.co/bLDHvzV/img2.jpg",
+        "category_name": "History",
+        "book_name": " Noah Harari",
+        "author_name": "Mohsin Hamid",
+        "quantity": 20,
+        "categories": [
+            "History",
+            "Novel",
+            "Thriller",
+            "Drama"
+        ],
+        "description": "To Kill a Mockingbird is a novel that addresses racial",
+        "rating": 4.1
+    },
+    {
+        "image": "https://i.ibb.co/42MwLnq/img1.jpg",
+        "category_name": "Thriller",
+        "book_name": " Noah Harari",
+        "author_name": "Yuval Noah Harari",
+        "quantity": 20,
+        "categories": [
+            "History",
+            "Novel",
+            "Thriller",
+            "Drama"
+        ],
+        "description": "To Kill a Mockingbird is a novel that addresses racial",
+        "rating": 4.5
+    },
+    {
+        "image": "https://i.ibb.co/bKnwZMg/img3.jpg",
+        "category_name": "Drama",
+        "book_name": " Noah Harari",
+        "author_name": "J.R.R. Tolkien",
+        "quantity": 20,
+        "categories": [
+            "History",
+            "Novel",
+            "Thriller",
+            "Drama"
+        ],
+        "description": "To Kill a Mockingbird is a novel that addresses racial",
+        "rating": 4.7
+    },
+    {
+        "image": "https://i.ibb.co/tqKWkqK/img4.jpg",
+        "category_name": "Novel",
+        "book_name": " Noah Harari",
+        "author_name": "Harper Lee",
+        "quantity": 20,
+        "categories": [
+            "History",
+            "Novel",
+            "Thriller",
+            "Drama"
+        ],
+        "description": "To Kill a Mockingbird is a novel that addresses racial",
+        "rating": 4.8
+    }
+]
