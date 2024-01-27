@@ -16,7 +16,7 @@ const AuthorsCard = ({ author }) => {
 
         // </div>
 
-        <div className="group relative  bg-base-100 border mt-5">
+        <div className="group relative  bg-base-100 border-2 mt-5">
             <img className="w-full object-cover  rounded-xl h-[350px] p-4" src={image} />
             <div
                 className="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-red-400 opacity-0 group-hover:h-full group-hover:opacity-100 duration-500">

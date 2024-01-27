@@ -1,20 +1,33 @@
 import { Link, NavLink } from 'react-router-dom';
 import navLogo from '../../../assets/images/logo/nav-with-logo.jpg.jpg'
+import useAuth from '../../../hook/useAuth';
 
 
 const Navbar = () => {
+    const { user, logOut } = useAuth()
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+
     const navItem = <>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/addBook'>Add Book</NavLink></li>
         <li><NavLink to='/allBook'>All Books</NavLink></li>
         <li><NavLink to='/borrowedBook'>Borrowed Books</NavLink></li>
-        <li><NavLink to='/logIn'>LogIn</NavLink></li>
+        {user?.email ? <button onClick={handleLogOut} > Log Out</button> :
+            <li><NavLink to='/logIn'>LogIn</NavLink></li>
+        }
 
     </>
 
     return (
         <div>
-            <div className="navbar border rounded-xl p-3 mt-5 mb-5">
+            <div className="navbar border-2 rounded-xl p-3 mt-5 mb-5">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

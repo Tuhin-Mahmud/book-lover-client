@@ -6,6 +6,7 @@ import AddBook from "../Pages/AddBook/AddBook";
 import AllBooks from "../Pages/AllBooks/AllBooks";
 import BorrowedBooks from "../Pages/BorrowedBooks/BorrowedBooks";
 import LogIn from "../Pages/LogIn/LogIn";
+import Register from "../Pages/Register/Register";
 
 const router = createBrowserRouter([
     {
@@ -17,9 +18,11 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <Home />
             },
+
             {
-                path: '/addBook',
-                element: <AddBook />
+                path: '/addBook/:id',
+                element: <AddBook></AddBook>,
+                loader: ({ params }) => fetch(`http://localhost:5000/books/read/${params.id}`)
             },
             {
                 path: '/allBook',
@@ -34,6 +37,10 @@ const router = createBrowserRouter([
     {
         path: '/login',
         element: <LogIn />
+    },
+    {
+        path: '/register',
+        element: <Register />
     }
 ])
 
