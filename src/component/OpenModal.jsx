@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import axios from "axios";
+
 import useAuth from "../hook/useAuth";
 import useAxiosPublic from "../hook/useAxiosPublic";
 
@@ -34,7 +34,7 @@ const OpenModal = ({ details }) => {
     return (
         <div>
             {/* You can open the modal using document.getElementById('ID').showModal() method */}
-            <button className="btn  bg-gray-400 ml-16 hover:bg-orange-300 hover:text-black uppercase" onClick={() => document.getElementById('my_modal_4').showModal()}>Borrow</button>
+            <button className="btn  bg-gray-400 ml-16 hover:bg-orange-300 hover:text-black uppercase" onClick={() => document.getElementById('my_modal_4').showModal()}>Borrow This Book</button>
             <dialog id="my_modal_4" className="modal">
                 <div className="modal-box w-1/4 max-w-5xl ">
                     <h1 className="text-2xl text-center text-sky-400 font-serif">Please Borrow this Book</h1>

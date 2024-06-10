@@ -63,12 +63,11 @@ const BookDetails = () => {
                                 </div>
                             </div>
                             <div className='mt-5'>
-                                {/* <button className="btn btn-neutral hover:bg-gray-600 uppercase">Borrow
-                </button> */}
+
                                 <div className='flex'>
                                     <OpenModal details={details}></OpenModal>
                                     <Link to={`/readDetails/${_id}`}>
-                                        <button className="btn btn-primary ml-16 hover:bg-orange-300 hover:text-black uppercase">Read...</button>
+                                        <button className="btn btn-outline  ml-16 hover:bg-orange-300 hover:text-black uppercase">Read more...</button>
                                     </Link>
                                 </div>
                                 <p className=' mt-4 text-xl font-bold text-gray-500'>Categories: <span className='text-gray-400'>Adventure, Biographic, Children, Christmas Best, Christmas Hot</span></p>
