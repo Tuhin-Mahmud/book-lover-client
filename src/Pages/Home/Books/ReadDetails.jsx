@@ -49,7 +49,7 @@ const ReadDetails = () => {
                     </div>
 
                     {/* sidebar */}
-                    <div className="md:col-span-2">
+                    <div className="md:col-span-2 p-2">
 
                         <div className="relative space-y-8 bg-white p-8 shadow-[0px_0px_30px_2px_rgba(100,100,111,0.1)] dark:bg-[#18181B] w-full border rounded-xl">
                             {/* top part  */}
