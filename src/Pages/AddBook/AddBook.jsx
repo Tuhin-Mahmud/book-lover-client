@@ -21,7 +21,7 @@ const AddBook = () => {
         const rating = form.rating?.value || 'not available';
         const photo = form.photo?.value || 'not available';
         const email = user?.email;
-        const order = {
+        const addBook = {
             name,
             // image,
             email,
@@ -32,18 +32,22 @@ const AddBook = () => {
             rating,
             photo
         }
-        console.log(order);
-        axiosSecure.post('')
+        console.log(addBook);
+        axiosSecure.post('/books', addBook)
+            .then(res => {
+                if (res.data.insertedId) {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "book order successfully",
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
+            })
 
     }
 
-    // Swal.fire({
-    //     position: "top-end",
-    //     icon: "success",
-    //     title: "book order successfully",
-    //     showConfirmButton: false,
-    //     timer: 1500
-    // });
     return (
         <Container>
             <HeaderText Heading={'Add Book'} subHeading={'Add Book'}></HeaderText>
@@ -60,20 +64,22 @@ const AddBook = () => {
                             <label className="label">
                                 <span className="label-text">Category</span>
                             </label>
-                            {/* <input type="text" placeholder="Category" className="input input-bordered" name="category" /> */}
-                            <select className="input input-bordered" name="category" id="">
-                                <option value="">Select book category</option>
+
+                            <select defaultValue="default" className="select select-bordered w-full ">
+                                <option disabled value="default">Select book category</option>
                                 <option value="novel">Novel</option>
                                 <option value="Thriller">Thriller</option>
                                 <option value="History">History</option>
                                 <option value="Drama">Drama</option>
                             </select>
+
+
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Author Name</span>
                             </label>
-                            <input type="text" className="input input-bordered" required name="authorName" />
+                            <input type="text" className="input input-bordered" required name="authorName" placeholder="Author name" />
                         </div>
                         <div className="form-control">
                             <label className="label">

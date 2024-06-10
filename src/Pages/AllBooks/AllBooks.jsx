@@ -14,7 +14,7 @@ const AllBooks = () => {
         <Container>
             <div>
                 <HeaderText Heading={'All Books Here'} subHeading={'All Books Here'}></HeaderText>
-                <h1>{categoriesBook.length}</h1>
+                <h1 className="text-xl pl-6 font-serif text-gray-400"> Total Books: {categoriesBook.length}</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {
                         categoriesBook.map(book => <AllBookCart
