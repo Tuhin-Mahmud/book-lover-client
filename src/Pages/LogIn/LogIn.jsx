@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import login from '../../assets/images/login/login.svg'
 import useAuth from '../../hook/useAuth';
 import { FaGoogle } from "react-icons/fa";
+import toast from 'react-hot-toast';
 
 
 const LogIn = () => {
@@ -19,13 +20,17 @@ const LogIn = () => {
         const password = form.password.value;
         console.log(email, password);
 
+        const toastId = toast.loading('loggedIn...')
+
         signIn(email, password)
             .then(result => {
                 console.log(result.user);
+                toast.success('login Successfully', { id: toastId })
                 navigate(from, { replace: true })
             })
-            .then(error => {
+            .catch(error => {
                 console.error(error);
+                toast.error(error.message, { id: toastId })
             })
 
     }

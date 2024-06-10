@@ -2,6 +2,7 @@ import useAuth from "../../hook/useAuth";
 import register from '../../assets/images/login/login.svg'
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 const Register = () => {
     const location = useLocation()
@@ -19,9 +20,11 @@ const Register = () => {
         const password = form.password.value;
         console.log(email, password, name);
 
+        const toastId = toast.loading('Register...')
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
+                toast.success('Register successfully', { id: toastId })
                 navigate(from, { replace: true })
             })
             .catch(error => {
@@ -30,12 +33,18 @@ const Register = () => {
 
     }
     const handleGoogle = () => {
+
+        // const toastId = toast.loading('google login...')
         googleLogin()
             .then((result) => {
                 console.log(result.user);
+                // toast.success('google login successfully', { id: toastId })
                 navigate(from, { replace: true })
             })
-            .catch(err => console.log(err))
+            .catch(err => {
+                toast.err(err.message)
+                console.log(err)
+            })
     }
     return (
         <div className="hero min-h-screen bg-base-200">

@@ -7,8 +7,16 @@ import AllBooks from "../Pages/AllBooks/AllBooks";
 import BorrowedBooks from "../Pages/BorrowedBooks/BorrowedBooks";
 import LogIn from "../Pages/LogIn/LogIn";
 import Register from "../Pages/Register/Register";
+import BookCategory from "../Pages/Home/Books/BookCategory";
+import BookDetails from "../Pages/Home/Books/BookDetails";
+import PrivetRout from "./PrivetRout";
+import ReadDetails from "../Pages/Home/Books/ReadDetails";
+import UpdateBook from "../Pages/AllBooks/UpdateBook";
+
+
 
 const router = createBrowserRouter([
+
     {
         path: '/',
         element: <MainLayOut></MainLayOut>,
@@ -20,17 +28,43 @@ const router = createBrowserRouter([
             },
 
             {
-                path: '/addBook/:id',
+                path: '/addBook',
                 element: <AddBook></AddBook>,
-                loader: ({ params }) => fetch(`http://localhost:5000/books/read/${params.id}`)
+
+            },
+
+            {
+                path: '/bookCategories/:category',
+                element: <BookCategory></BookCategory>,
+
+
             },
             {
+                path: '/categoryBookDetails/:id',
+                element: <PrivetRout><BookDetails></BookDetails></PrivetRout>,
+                loader: ({ params }) => fetch(`http://localhost:5000/books/${params.id}`)
+            },
+            {
+                path: '/readDetails/:id',
+                element: <ReadDetails></ReadDetails>,
+                loader: ({ params }) => fetch(`http://localhost:5000/books/${params.id}`)
+
+            },
+
+            {
                 path: '/allBook',
-                element: <AllBooks />
+                element: <PrivetRout><AllBooks /></PrivetRout>
+            },
+            {
+                path: 'updateAllBook/:id',
+                element: <PrivetRout><UpdateBook></UpdateBook></PrivetRout>,
+                loader: ({ params }) => fetch(`http://localhost:5000/books/${params.id}`)
+
             },
             {
                 path: '/borrowedBook',
-                element: <BorrowedBooks />
+                element: <PrivetRout><BorrowedBooks /></PrivetRout>,
+
             }
         ]
     },

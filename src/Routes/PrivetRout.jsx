@@ -1,17 +1,18 @@
 /* eslint-disable react/prop-types */
 import { Navigate, useLocation } from "react-router-dom";
 import useAuth from "../hook/useAuth";
+import Loader from "../component/Loader/Loader";
 
 const PrivetRout = ({ children }) => {
     const { user, loading } = useAuth()
     const location = useLocation()
 
     if (loading) {
-        <p className="text-center"><progress className="progress w-56"></progress></p>
+        return <Loader></Loader>
     }
 
     if (user) {
-        children
+        return children;
     }
 
     return <Navigate to="/login" state={{ from: location }} replace ></Navigate>;

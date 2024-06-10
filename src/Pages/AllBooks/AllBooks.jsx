@@ -1,71 +1,30 @@
 import { useEffect, useState } from "react";
 import useAuth from "../../hook/useAuth";
 
+import AllBookCart from "./AllBookCart";
+import useCateBooks from "../../hook/useCateBooks";
+import Container from "../../component/common/Container";
+import HeaderText from "../../component/common/HeaderText";
+
 const AllBooks = () => {
-    const { user } = useAuth()
-    const [books, setBooks] = useState([])
+    const [categoriesBook] = useCateBooks()
 
-    const URL = `http://localhost:5000/orderBook?email=${user?.email}`
-
-    useEffect(() => {
-        fetch(URL)
-            .then(res => res.json())
-            .then(data => setBooks(data))
-    }, [URL])
 
     return (
-        <div>
-            <div className="overflow-x-auto">
-                <table className="table">
-                    {/* head */}
-                    <thead>
-                        <tr>
-                            <th>
-                                #
-                            </th>
-                            <th>image</th>
-                            <th>name</th>
-                            <th>price</th>
-                            <th>email</th>
-                            <th>delete</th>
-                            <th>Update</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            books.map((book, index) => <tr key={book._id}>
-                                <th>
-                                    {index + 1}
-                                </th>
-                                <td>
-                                    <div className="flex items-center gap-3">
-                                        <div className="avatar">
-                                            <div className="mask mask-squircle w-12 h-12">
-                                                <img src={book.image} alt="Avatar Tailwind CSS Component" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    {book.price}
-                                </td>
-                                <td>
-                                    {book.name}
-                                </td>
-                                <td>{book.email}</td>
-                                <th>
-                                    <button className="btn btn-ghost  ">X</button>
-                                </th>
-                                <th>
-                                    <button className="btn btn-ghost  ">update</button>
-                                </th>
-                            </tr>)
-                        }
-
-                    </tbody>
-                </table>
+        <Container>
+            <div>
+                <HeaderText Heading={'All Books Here'} subHeading={'All Books Here'}></HeaderText>
+                <h1>{categoriesBook.length}</h1>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    {
+                        categoriesBook.map(book => <AllBookCart
+                            key={book._id}
+                            book={book}
+                        ></AllBookCart>)
+                    }
+                </div>
             </div>
-        </div>
+        </Container>
     );
 };
 

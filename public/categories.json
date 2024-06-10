@@ -1,0 +1,162 @@
+[
+    {
+        "image": "https://i.ibb.co/wBPYTj6/919na-ISZs-WL-AC-UF894-1000-QL80.jpg",
+        "category": "history",
+        "name": "History of the Islamic World",
+        "author_name": "Francis Robinson",
+        "quantity": 4,
+        "description": "This comprehensive and visually engaging book provides an overview of Islamic history from its inception to the modern era. It covers various aspects of Islamic civilization, including art, science, politics, and religion, making it an essential resource for anyone interested in understanding the diverse and rich history of the Islamic world.",
+        "rating": 4.1,
+        "price": 500
+    },
+    {
+        "image": "https://i.ibb.co/rm7Yd98/20794875.jpg",
+        "category": "history",
+        "name": "Lost Islamic History",
+        "author_name": " Firas Alkhateeb",
+        "quantity": 4,
+        "description": " Alkhateeb's book offers a concise and accessible overview of key events, personalities, and achievements in Islamic history that are often overlooked or forgotten. It highlights the contributions of Muslims to fields such as science, medicine, philosophy, and literature, aiming to foster a deeper appreciation of the diverse heritage of the Islamic civilization.",
+        "rating": 4.1,
+        "price": 450
+    },
+    {
+        "image": "https://i.ibb.co/zbD0mPk/download.jpg",
+        "category": "history",
+        "name": " 'God's Crucible",
+        "author_name": "David Levering Lewis",
+        "quantity": 4,
+        "description": "Lewis explores the transformative impact of Islamic civilization on the development of medieval Europe, particularly during the early Middle Ages. He examines the cultural, intellectual, and economic exchanges between the Islamic world and Europe, arguing that Islamic influences played a crucial role in shaping the emergence of European civilization..",
+        "rating": 4.1,
+        "price": 200
+    },
+    {
+        "image": "https://i.ibb.co/X7nKSq7/1269836-6d445382-6650-42a5-80a8-ec7f3471ef0b.jpg",
+        "category": "history",
+        "name": " A History of Islamic Societies",
+        "author_name": "M. Lapidus",
+        "quantity": 4,
+        "description": " Lapidus provides a comprehensive and scholarly examination of the social, political, and cultural developments within Islamic societies from the time of Muhammad to the present day. Drawing on a wide range of sources, the book offers a nuanced understanding of the diversity and complexity of Islamic civilizations across different regions and periods.",
+        "rating": 4.1,
+        "price": 500
+    },
+    {
+        "image": "https://i.ibb.co/KWr8ZzP/p169888-p-v8-ah.jpg",
+        "category": "novel",
+        "name": " The Kite Runner",
+        "author_name": " Khaled Hosseini",
+        "quantity": 9,
+        "description": "Set against the backdrop of Afghanistan's tumultuous history, The Kite Runner follows the intertwined lives of Amir, a privileged Pashtun boy, and Hassan, his loyal Hazara friend. As they navigate friendship, betrayal, and redemption, the novel explores themes of guilt, forgiveness, and the enduring bonds of kinship against the backdrop of Afghan culture and society.",
+        "rating": 4.8,
+        "price": 700
+    },
+    {
+        "image": "https://i.ibb.co/mGgPYVp/bc8317a589d7aec99a30019cccee953b.jpg",
+        "category": "novel",
+        "name": " The Forty Rules of Love",
+        "author_name": "Elif Shafak",
+        "quantity": 9,
+        "description": "Interweaving the narratives of a modern-day housewife and the 13th-century mystic poet Rumi, The Forty Rules of Love explores the transformative power of love, spirituality, and Sufi philosophy. Through the characters' journeys, the novel delves into themes of self-discovery, divine love, and the pursuit of truth, offering a captivating exploration of Islamic mysticism and the enduring legacy of Rumi's teachings.",
+        "rating": 4.8,
+        "price": 200
+    },
+    {
+        "image": "https://i.ibb.co/12n6SST/9781526650153.jpg",
+        "category": "novel",
+        "name": " The Moor's Account",
+        "author_name": " Laila Lalami",
+        "quantity": 9,
+        "description": "The Book in Three Sentences: Seek out new ideas and try new things. When trying something new, do it on a scale where failure is survivable. Seek out feedback and learn from your mistakes as you go along.",
+        "rating": 4.8,
+        "price": 380
+    },
+    {
+        "image": "https://i.ibb.co/9WnxqmV/dsc3012.jpg",
+        "category": "novel",
+        "name": " The Palace of Illusions",
+        "author_name": "Chitra Banerjee Divakaruni",
+        "quantity": 9,
+        "description": "The Book in Three Sentences: Seek out new ideas and try new things. When trying something new, do it on a scale where failure is survivable. Seek out feedback and learn from your mistakes as you go along.",
+        "rating": 4.8,
+        "price": 490
+    },
+    {
+        "image": "https://i.ibb.co/Q8D1FNw/download.png",
+        "category": "drama",
+        "name": " The Conference of the Birds",
+        "author_name": "Attar of Nishapur",
+        "quantity": 9,
+        "description": "The Book in Three Sentences: Seek out new ideas and try new things. When trying something new, do it on a scale where failure is survivable. Seek out feedback and learn from your mistakes as you go along.",
+        "rating": 4.8,
+        "price": 260
+    },
+    {
+        "image": "https://i.ibb.co/tqKWkqK/img4.jpg",
+        "category": "drama",
+        "name": "  One Thousand and One Nights",
+        "author_name": "Harper Lee",
+        "quantity": 9,
+        "description": "The Book in Three Sentences: Seek out new ideas and try new things. When trying something new, do it on a scale where failure is survivable. Seek out feedback and learn from your mistakes as you go along.",
+        "rating": 4.8,
+        "price": 240
+    },
+    {
+        "image": "https://i.ibb.co/Q8D1FNw/download.png",
+        "category": "drama",
+        "name": "The Conference of the Birds",
+        "author_name": "Farid al-Din Attar",
+        "quantity": 9,
+        "description": "The Book in Three Sentences: Seek out new ideas and try new things. When trying something new, do it on a scale where failure is survivable. Seek out feedback and learn from your mistakes as you go along.",
+        "rating": 4.8,
+        "price": 600
+    },
+    {
+        "image": "https://i.ibb.co/Tw8p3cQ/download.jpg",
+        "category": "drama",
+        "name": " The Tale of Aladdin",
+        "author_name": "Harper Lee",
+        "quantity": 9,
+        "description": "The Book in Three Sentences: Seek out new ideas and try new things. When trying something new, do it on a scale where failure is survivable. Seek out feedback and learn from your mistakes as you go along.",
+        "rating": 4.8,
+        "price": 500
+    },
+    {
+        "image": "https://i.ibb.co/r2dhjbR/download.jpg",
+        "category": "thriller",
+        "name": " The Faithful Spy",
+        "author_name": " Alex Berenson",
+        "quantity": 9,
+        "description": " In this gripping thriller, Alex Berenson introduces John Wells, a former CIA operative who goes undercover as a jihadist to infiltrate Al-Qaeda. As Wells delves deeper into the terrorist network, he grapples with his own identity and loyalties, navigating a dangerous world of deception, betrayal, and ideological extremism.",
+        "rating": 4.8,
+        "price": 300
+    },
+    {
+        "image": "https://i.ibb.co/NxDzdFS/images.jpg",
+        "category": "thriller",
+        "name": " The Last Templar",
+        "author_name": "Raymond Khoury",
+        "quantity": 9,
+        "description": " In this espionage thriller set in the aftermath of the Arab Spring, Olen Steinhauer crafts a tale of international intrigue and betrayal centered around the mysterious death of a diplomat in Cairo. As the protagonist, Sophie Kohl, unravels a web of deception involving espionage, terrorism, and political manipulation, she confronts the complexities of contemporary Middle Eastern politics and the lingering effects of revolution..",
+        "rating": 4.8,
+        "price": 500
+    },
+    {
+        "image": "https://i.ibb.co/sFCXZtd/download-1.jpg",
+        "category": "thriller",
+        "name": " The Sword of Medina",
+        "author_name": "Sherry Jones",
+        "quantity": 9,
+        "description": "The Book in Three Sentences: Seek out new ideas and try new things. When trying something new, do it on a scale where failure is survivable. Seek out feedback and learn from your mistakes as you go along.",
+        "rating": 4.8,
+        "price": 200
+    },
+    {
+        "image": "https://i.ibb.co/gTXg9sT/cairo-affair.jpg",
+        "category": "thriller",
+        "name": " The Cairo Affai",
+        "author_name": "Olen Steinhauer",
+        "quantity": 9,
+        "description": " In this espionage thriller set in the aftermath of the Arab Spring, Olen Steinhauer crafts a tale of international intrigue and betrayal centered around the mysterious death of a diplomat in Cairo. As the protagonist, Sophie Kohl, unravels a web of deception involving espionage, terrorism, and political manipulation, she confronts the complexities of contemporary Middle Eastern politics and the lingering effects of revolution.",
+        "rating": 4.8,
+        "price": 290
+    }
+]

@@ -1,62 +1,18 @@
 [
     {
-        "image": "https://i.ibb.co/bLDHvzV/img2.jpg",
-        "category_name": "History",
-        "book_name": "The Reluctant Fundamentalist",
-        "author_name": "Mohsin Hamid",
-        "quantity": 4,
-        "categories": [
-            "History",
-            "Novel",
-            "Thriller",
-            "Drama"
-        ],
-        "description": "The Book in Three Sentences: Seek out new ideas and try new things. When trying something new, do it on a scale where failure is survivable. Seek out feedback and learn from your mistakes as you go along.",
-        "rating": 4.1
+        "image": "https://i.ibb.co/XVmMGTn/history.jpg",
+        "name": "history"
     },
     {
-        "image": "https://i.ibb.co/42MwLnq/img1.jpg",
-        "category_name": "Thriller",
-        "book_name": " The Da Vinci Code",
-        "author_name": "Yuval Noah Harari",
-        "quantity": 7,
-        "categories": [
-            "History",
-            "Novel",
-            "Thriller",
-            "Drama"
-        ],
-        "description": "The Book in Three Sentences: Seek out new ideas and try new things. When trying something new, do it on a scale where failure is survivable. Seek out feedback and learn from your mistakes as you go along.",
-        "rating": 4.5
+        "image": "https://i.ibb.co/1f4hD18/thriller.jpg",
+        "name": "thriller"
     },
     {
-        "image": "https://i.ibb.co/bKnwZMg/img3.jpg",
-        "category_name": "Drama",
-        "book_name": " The Book Thief",
-        "author_name": "J.R.R. Tolkien",
-        "quantity": 2,
-        "categories": [
-            "History",
-            "Novel",
-            "Thriller",
-            "Drama"
-        ],
-        "description": "The Book in Three Sentences: Seek out new ideas and try new things. When trying something new, do it on a scale where failure is survivable. Seek out feedback and learn from your mistakes as you go along.",
-        "rating": 4.7
+        "image": "https://i.ibb.co/zn0bPzQ/drama.jpg",
+        "name": "drama"
     },
     {
-        "image": "https://i.ibb.co/tqKWkqK/img4.jpg",
-        "category_name": "Novel",
-        "book_name": " The Lord of the Rings",
-        "author_name": "Harper Lee",
-        "quantity": 9,
-        "categories": [
-            "History",
-            "Novel",
-            "Thriller",
-            "Drama"
-        ],
-        "description": "The Book in Three Sentences: Seek out new ideas and try new things. When trying something new, do it on a scale where failure is survivable. Seek out feedback and learn from your mistakes as you go along.",
-        "rating": 4.8
+        "image": "https://i.ibb.co/WWdBPCy/novel.jpg",
+        "name": "novel"
     }
 ]
