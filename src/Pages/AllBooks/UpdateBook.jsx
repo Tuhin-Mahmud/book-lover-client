@@ -2,14 +2,14 @@ import Swal from "sweetalert2";
 import { useLoaderData } from "react-router-dom";
 import Container from "../../component/common/Container";
 import HeaderText from "../../component/common/HeaderText";
-import useAxiosPublic from "../../hook/useAxiosPublic";
+
 import useAxiosSecure from "../../hook/useAxiosSecure";
 
 
 const UpdateBook = () => {
     const updateBook = useLoaderData()
     const axiosSecure = useAxiosSecure()
-    const { _id, image, book_name, author_name, quantity, rating } = updateBook;
+    const { _id, image, book_name, author_name, rating } = updateBook;
 
 
     const handleBookUpdate = e => {
