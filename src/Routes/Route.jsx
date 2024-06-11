@@ -12,6 +12,7 @@ import BookDetails from "../Pages/Home/Books/BookDetails";
 import PrivetRout from "./PrivetRout";
 import ReadDetails from "../Pages/Home/Books/ReadDetails";
 import UpdateBook from "../Pages/AllBooks/UpdateBook";
+import About from "../Pages/About/About";
 
 
 
@@ -65,7 +66,12 @@ const router = createBrowserRouter([
                 path: '/borrowedBook',
                 element: <PrivetRout><BorrowedBooks /></PrivetRout>,
 
-            }
+            },
+            {
+                path: '/about',
+                element: <About />,
+
+            },
         ]
     },
     {

@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import navLogo from '../../../assets/images/logo/nav-with-logo.jpg.jpg'
 import useAuth from '../../../hook/useAuth';
-import nav from '../../../assets/images/navbar/nav.jpg'
+import nav from '../../../assets/images/logo/user.webp'
 
 
 const Navbar = () => {
@@ -28,8 +28,11 @@ const Navbar = () => {
         <li>
             <NavLink className={({ isActive }) => isActive ? 'underline text-red-400 ' : 'hover:text-blue-400'} to='/borrowedBook'>Borrowed Books</NavLink>
         </li>
+        <li>
+            <NavLink className={({ isActive }) => isActive ? 'underline text-red-400 ' : 'hover:text-blue-400'} to='/about'>About</NavLink>
+        </li>
         {
-            user?.email ? <button className='' onClick={handleLogOut} > Log Out</button> :
+            user?.email ? <button className='' onClick={handleLogOut} > LogOut</button> :
                 <li><NavLink className={({ isActive }) => isActive ? 'underline text-blue-400 ' : 'hover:text-blue-400'} to='/logIn'>Login</NavLink></li>
         }
 
@@ -65,7 +68,7 @@ const Navbar = () => {
                         <div className="dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar border-2 border-red-300 ">
                                 <div className="w-10 rounded-full">
-                                    {user?.photoURL && <img src={user?.photoURL} alt="" /> || <img src={nav} alt="" />}
+                                    <img className='w-12 h-12' src={user?.photoURL ? user?.photoURL : nav} alt="" />
                                 </div>
                             </div>
                             <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 space-y-4">
