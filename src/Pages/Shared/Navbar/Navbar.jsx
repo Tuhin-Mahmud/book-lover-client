@@ -72,14 +72,15 @@ const Navbar = () => {
                                 </div>
                             </div>
                             <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 space-y-4">
-                                <span className='text-center badge justify-center'>
+                                <span className='text-center text-sm justify-center'>
                                     {user?.displayName}
+
                                 </span>
-                                <li>
-                                    <button className="btn btn-sm">
-                                        Profile
-                                    </button>
-                                </li>
+
+                                <p className='text-sm'>
+                                    {user?.email}
+                                </p>
+
 
                                 {user?.email ? <button className='btn btn-sm' onClick={handleLogOut} > Log Out</button> :
                                     <li><NavLink className='btn btn-sm' to='/logIn'>LogIn</NavLink></li>
