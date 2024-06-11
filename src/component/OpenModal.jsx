@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 
+import Swal from "sweetalert2";
 import useAuth from "../hook/useAuth";
 import useAxiosPublic from "../hook/useAxiosPublic";
 
@@ -27,6 +28,15 @@ const OpenModal = ({ details }) => {
         axiosPublic.post('/borrowed', borrowedBook)
             .then(res => {
                 console.log(res.data);
+                if (res.data.insertedId) {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: `Your ${name} book has been Borrowed`,
+                        showConfirmButton: false,
+                        timer: 2500
+                    });
+                }
             })
         // console.log(date);
     }
@@ -42,7 +52,7 @@ const OpenModal = ({ details }) => {
                     <form onSubmit={handleReturn} >
                         <div className="form-control">
                             <h2 className="text-xl  text-neutral-700 font-serif"> Return Date</h2>
-                            <input name="return" type="number" placeholder="Return date" className="input input-bordered" required />
+                            <input name="return" type="text" placeholder="Return date" className="input input-bordered" required />
                         </div>
 
                         <button className="btn  bg-red-300 border font-serif text-center mt-4">submit</button>

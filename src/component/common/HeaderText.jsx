@@ -3,6 +3,8 @@
 const HeaderText = ({ Heading, subHeading }) => {
     return (
 
+
+
         <div className="">
             <div className="relative my-10 flex font-serif flex-col items-center">
                 <h1 className="text-5xl font-medium z-10 ">{Heading}</h1>
