@@ -36,7 +36,7 @@ const Customer = () => {
                             {
                                 fold ? (
                                     <>
-                                        <p className=""></p>
+
                                         <span onClick={() => setFold(
                                             !fold)} className="text-blue-600 cursor-pointer font-medium text-lg">Read more....</span>
                                     </>

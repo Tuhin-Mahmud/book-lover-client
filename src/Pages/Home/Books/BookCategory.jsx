@@ -10,6 +10,7 @@ import HeaderText from "../../../component/common/HeaderText";
 
 const BookCategory = () => {
     const [categoriesBook, isLoading] = useCateBooks()
+
     const { category } = useParams()
 
     const categoryBook = categoriesBook.filter(item => item.category === category)
