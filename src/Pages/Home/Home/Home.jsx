@@ -1,3 +1,5 @@
+import BookSigning from "../../BookSigning/BookSigning";
+import ContactUs from "../../ContactUs/ContactUs";
 import Authors from "../Authors/Authors";
 import Banner from "../Banner/Banner";
 import Books from "../Books/Books";
@@ -13,7 +15,9 @@ const Home = () => {
             <Banner></Banner>
             <Books />
             <Purchase />
+            <BookSigning />
             <Faq></Faq>
+            <ContactUs />
             <Authors />
             <Customer></Customer>
         </div>
