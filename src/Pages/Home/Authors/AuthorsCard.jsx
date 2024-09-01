@@ -4,17 +4,7 @@ import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
 const AuthorsCard = ({ author }) => {
     const { image, author_name } = author;
     return (
-        // <div classNameName="card bg-base-100 shadow-xl  mt-5">
-        //     <figure><img classNameName=" rounded-xl w-full h-[350px] p-4" src={image} alt="Shoes" /></figure>
-        //     <div classNameName="text-center">
-        //         <h2 classNameName="text-2xl mb-3">{author_name}</h2>
-        //         <div classNameName="mb-3">
-        //             <button classNameName="btn mr-3 text-2xl"><AiOutlineTwitter /></button>
-        //             <button classNameName="btn text-2xl"><AiFillInstagram /></button>
-        //         </div>
-        //     </div>
 
-        // </div>
 
         <div className="group relative  bg-base-100 border-2 mt-5">
             <img className="w-full object-cover  rounded-xl h-[350px] p-4" src={image} />
