@@ -1,12 +1,15 @@
 import { toast } from "react-toastify";
 import Container from "../../component/common/Container";
+import { useState } from "react";
 
 const ContactUs = () => {
+    const [inputValue, setInputValue] = useState('')
     const handleSubmit = e => {
         e.preventDefault()
-        const email = e.target.email.value;
-        if (email) {
+
+        if (inputValue) {
             toast.success('Thank You for our connect.')
+            setInputValue('')
         }
     }
     return (
@@ -37,6 +40,8 @@ const ContactUs = () => {
                         <div className="relative text-sm md:w-1/2 mx-auto">
                             <input
                                 className="peer/email block w-full rounded-md border border-blue-400 bg-inherit p-2.5 shadow-lg outline-none"
+                                value={inputValue}
+                                onChange={(e) => setInputValue(e.target.value)}
                                 name="email"
                                 type="email"
                                 placeholder=""
