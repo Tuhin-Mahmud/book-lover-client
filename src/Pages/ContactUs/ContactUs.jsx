@@ -34,7 +34,7 @@ const ContactUs = () => {
                 {/* --- */}
                 <div>
                     <form onSubmit={handleSubmit}>
-                        <div className="relative text-sm w-1/2 mx-auto">
+                        <div className="relative text-sm md:w-1/2 mx-auto">
                             <input
                                 className="peer/email block w-full rounded-md border border-blue-400 bg-inherit p-2.5 shadow-lg outline-none"
                                 name="email"
