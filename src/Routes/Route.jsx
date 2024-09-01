@@ -43,12 +43,12 @@ const router = createBrowserRouter([
             {
                 path: '/categoryBookDetails/:id',
                 element: <PrivetRout><BookDetails></BookDetails></PrivetRout>,
-                loader: ({ params }) => fetch(`http://localhost:5000/books/${params.id}`)
+                loader: ({ params }) => fetch(`https://book-lovers-server-tawny.vercel.app/books/${params.id}`)
             },
             {
                 path: '/readDetails/:id',
                 element: <ReadDetails></ReadDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/books/${params.id}`)
+                loader: ({ params }) => fetch(`https://book-lovers-server-tawny.vercel.app/books/${params.id}`)
 
             },
 
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
             {
                 path: 'updateAllBook/:id',
                 element: <PrivetRout><UpdateBook></UpdateBook></PrivetRout>,
-                loader: ({ params }) => fetch(`http://localhost:5000/books/${params.id}`)
+                loader: ({ params }) => fetch(`https://book-lovers-server-tawny.vercel.app/books/${params.id}`)
 
             },
             {

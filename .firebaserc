@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "booko-lovers"
-  }
+    "default": "library-6ad86",
+    "y": "library-6ad86"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
