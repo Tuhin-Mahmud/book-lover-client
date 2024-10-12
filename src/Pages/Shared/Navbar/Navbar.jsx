@@ -2,7 +2,8 @@ import { Link, NavLink } from 'react-router-dom';
 import navLogo from '../../../assets/images/logo/nav-with-logo.jpg.jpg'
 import useAuth from '../../../hook/useAuth';
 import nav from '../../../assets/images/logo/user.webp'
-
+import { useEffect, useState } from 'react';
+import './Header.css';
 
 const Navbar = () => {
     const { user, logOut } = useAuth()
@@ -38,9 +39,29 @@ const Navbar = () => {
 
     </div>
 
+    const [header, setHeader] = useState(false)
+
+    const scrollHeader = () => {
+        if (window.scrollY >= 20) {
+            setHeader(true)
+        }
+        else {
+            setHeader(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', scrollHeader)
+        // Clean up event listener on component unmount
+        // return () => {
+        //     window.removeEventListener('scroll', scrollHeader);
+        // };
+    }, [])
+
     return (
-        <div>
-            <div className="navbar h-24 shadow-lg border-b-2 border-red-300 rounded-xl ">
+
+        <div className={header ? ' fixed w-[100%] z-10 bg-white duration-700 transition' : 'bg-white '}>
+            <div className="navbar h-24    shadow-lg border-b-2 border-[#052c65] rounded-xl ">
                 {/* navbar */}
                 <div className=' w-full px-4'>
                     <div className="navbar-start ">
@@ -92,6 +113,8 @@ const Navbar = () => {
                 {/* end navbar */}
             </div>
         </div>
+
+
     );
 };
 

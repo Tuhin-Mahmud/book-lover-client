@@ -1,0 +1,6 @@
+.headerSmooth {
+    transition: top 0.5s ease;
+    /* background-color: red; */
+    /* top: 100px; */
+    position: fixed;
+}
