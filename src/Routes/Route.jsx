@@ -13,6 +13,7 @@ import PrivetRout from "./PrivetRout";
 import ReadDetails from "../Pages/Home/Books/ReadDetails";
 import UpdateBook from "../Pages/AllBooks/UpdateBook";
 import About from "../Pages/About/About";
+import AddToCartDetails from "../Pages/AddToCartDetails/AddToCartDetails";
 
 
 
@@ -37,6 +38,13 @@ const router = createBrowserRouter([
             {
                 path: '/bookCategories/:category',
                 element: <BookCategory></BookCategory>,
+
+
+            },
+            {
+                path: '/addToCartDetails/:id',
+                element: <AddToCartDetails />,
+                loader: ({ params }) => fetch(`https://book-lovers-server-tawny.vercel.app/topBooks/${params.id}`)
 
 
             },
