@@ -1,18 +1,10 @@
 import Container from "../../component/common/Container";
 import TopBookCart from "./TopBookCart";
-import { useQuery } from "@tanstack/react-query";
-import useAxiosPublic from "../../hook/useAxiosPublic";
+import useTopBooks from "../../hook/useTopBooks";
 
 const TopBooks = () => {
-    // const axiosPublic = useAxiosPublic()
-    // const { data: topBooks = [] } = useQuery({
-    //     queryKey: ['topBooks'],
-    //     queryFn: async () => {
-    //         const res = await axiosPublic.get('/toBooks')
-    //         console.log(topBooks);
-    //         return res.data;
-    //     }
-    // })
+
+    const [topBooks, isLoading] = useTopBooks()
     return (
         <div className="relative  overflow-hidden min-h-screen">
             <div className="absolute inset-y-0  -right-72 bg-[#007aff] transform rotate-45 w-[100%]" >
@@ -24,6 +16,7 @@ const TopBooks = () => {
                     {
                         topBooks.map(book => <TopBookCart
                             key={book._id}
+                            isLoading={isLoading}
                             book={book}
                         ></TopBookCart>)
                     }

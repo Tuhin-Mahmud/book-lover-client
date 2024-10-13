@@ -2,10 +2,16 @@
 import { Rating } from '@smastrom/react-rating';
 import '@smastrom/react-rating/style.css'
 import { Link } from 'react-router-dom';
+import Loader from '../../component/Loader/Loader';
 
-const TopBookCart = ({ book }) => {
+const TopBookCart = ({ book, isLoading }) => {
 
     const { _id, book_image, book_name, previous_price, running_price, author_img, author_name, rating, customer_review, review_date_time, description, long_description, SKU, category, format, total_page, language, publish_years, century } = book || {};
+
+    if (isLoading) {
+        return <Loader />
+    }
+
     return (
         <div>
             <div className="card bg-gray-50  ">
@@ -36,7 +42,7 @@ const TopBookCart = ({ book }) => {
                     </div>
                     <div className="card-actions">
                         <Link to={`/addToCartDetails/${_id}`} className='w-full'>
-                            <button className="relative h-10 w-full origin-top transform rounded-lg border-2 border-[#007aff] text-xl text-sky-500 before:absolute before:top-0 before:block before:h-0 before:w-full before:duration-500 hover:text-white hover:before:absolute hover:before:left-0 hover:before:-z-10 hover:before:h-full hover:before:bg-sky-500">Add To Cart</button>
+                            <button className="relative h-10 w-full origin-top transform rounded-lg border-2 border-[#052c65] text-xl text-sky-500 before:absolute before:top-0 before:block before:h-0 before:w-full before:duration-500 hover:text-white hover:before:absolute hover:before:left-0 hover:before:-z-10 hover:before:h-full hover:before:bg-sky-500">Add To Cart</button>
                         </Link>
 
                     </div>
