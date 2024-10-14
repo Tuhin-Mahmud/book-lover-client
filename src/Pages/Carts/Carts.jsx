@@ -51,57 +51,65 @@ const Carts = () => {
             <Container>
                 <div className="">
                     <div className="overflow-x-auto">
-                        <table className="table">
-                            {/* head */}
-                            <thead>
-                                <tr>
-                                    <th>
-                                        <label>
-                                            <th>#</th>
-                                        </label>
-                                    </th>
-                                    <th>Image</th>
-                                    <th>Name</th>
-                                    <th>Price</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {
-                                    carts.map((cart, count) =>
-                                        <tr key={cart._id}>
+                        {
+                            carts.length ?
+                                <table className="table">
+                                    {/* head */}
+                                    <thead>
+                                        <tr>
                                             <th>
                                                 <label>
-                                                    {count + 1}
+                                                    <th>#</th>
                                                 </label>
                                             </th>
-                                            <td>
-                                                <div className="flex items-center gap-3">
-                                                    <div className="avatar">
-                                                        <div className="mask mask-squircle h-24 w-24">
-                                                            <img
-                                                                src={cart.bookImg}
-                                                                alt="Avatar Tailwind CSS Component" />
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </td>
-                                            <td>
-                                                {cart.bookName}
-                                            </td>
-                                            <td>{cart.price}</td>
-                                            <th>
-                                                <button
-                                                    onClick={() => handleDelete(cart._id)}
-                                                    className="btn btn-ghost "><AiOutlineDelete className="text-2xl text-red-500" /></button>
-                                            </th>
+                                            <th>Image</th>
+                                            <th>Name</th>
+                                            <th>Price</th>
+                                            <th>Action</th>
                                         </tr>
-                                    )
-                                }
-                            </tbody>
+                                    </thead>
+                                    <tbody>
+                                        {
+                                            carts.map((cart, count) =>
+                                                <tr key={cart._id}>
+                                                    <th>
+                                                        <label>
+                                                            {count + 1}
+                                                        </label>
+                                                    </th>
+                                                    <td>
+                                                        <div className="flex items-center gap-3">
+                                                            <div className="avatar">
+                                                                <div className="mask mask-squircle h-24 w-24">
+                                                                    <img
+                                                                        src={cart.bookImg}
+                                                                        alt="Avatar Tailwind CSS Component" />
+                                                                </div>
+                                                            </div>
 
-                        </table>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        {cart.bookName}
+                                                    </td>
+                                                    <td>{cart.price}</td>
+                                                    <th>
+                                                        <button
+                                                            onClick={() => handleDelete(cart._id)}
+                                                            className="btn btn-ghost "><AiOutlineDelete className="text-2xl text-red-500" /></button>
+                                                    </th>
+                                                </tr>
+
+                                            )
+
+                                        }
+                                    </tbody>
+
+                                </table>
+                                :
+                                <p className="text-center font-bold text-xl font-serif">No Data Available, Please Add To The Cart.</p>
+                        }
+
                     </div>
                 </div>
             </Container>

@@ -7,7 +7,7 @@ const Modal = () => {
     return (
         <div>
             {/* You can open the modal using document.getElementById('ID').showModal() method */}
-            < button className="btn relative h-10  origin-top transform rounded-lg border-2 border-[#052c65] md:text-xl text-[#052c65] before:absolute before:top-0 before:block before:h-0 before:w-full before:duration-500 hover:text-white hover:before:absolute hover:before:left-0 hover:before:-z-10 hover:before:h-full hover:before:bg-sky-500" onClick={() => document.getElementById('my_modal_3').showModal()}> Read A Little</button >
+            < button className="btn relative h-10  origin-top transform rounded-lg border-2 border-[#052c65]  md:text-xl text-[#052c65] before:absolute before:top-0 before:block before:h-0 before:w-full before:duration-500 hover:text-white hover:before:absolute hover:before:left-0 hover:before:-z-10 hover:before:h-full hover:before:bg-sky-500" onClick={() => document.getElementById('my_modal_3').showModal()}> Read A Little</button >
             <dialog id="my_modal_3" className="modal">
                 <div className="modal-box ">
                     <form method="dialog">

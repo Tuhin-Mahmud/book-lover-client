@@ -14,8 +14,8 @@ const ContactUs = () => {
     }
     return (
         <Container>
-            <div className="bg-gray-50 h-[450px] p-6">
-                <h2 className=" text-center text-xl md:text-3xl font-serif">For any communication requests, <br /> please contact our dealer</h2>
+            <div className="bg-gray-50  p-6">
+                <h2 className=" text-center text-lg md:text-3xl font-serif">For any communication requests, <br /> please contact our dealer</h2>
                 <div className="flex flex-col lg:flex-row items-center md:justify-between px-20 py-10">
                     <div className=" text-lg text-gray-500">
                         <h4>

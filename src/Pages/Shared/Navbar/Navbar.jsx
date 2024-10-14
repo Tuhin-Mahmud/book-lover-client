@@ -40,6 +40,16 @@ const Navbar = () => {
             user?.email ? <button className='' onClick={handleLogOut} > LogOut</button> :
                 <li><NavLink className={({ isActive }) => isActive ? 'underline text-blue-400 ' : 'hover:text-blue-400'} to='/logIn'>Login</NavLink></li>
         }
+        {/* carts data */}
+        <Link to={'/carts'}>
+            <button className='mt-3  w-full ml-3'>
+                <div className="relative w-fit">
+
+                    <FaCartShopping className='text-2xl' />
+                    <span className="absolute -right-1 -top-4 flex size-5 items-center justify-center rounded-full bg-red-500 text-center text-[10px] text-white ">{carts.length}</span>
+                </div>
+            </button>
+        </Link>
 
     </div>
 
@@ -65,7 +75,7 @@ const Navbar = () => {
     return (
 
         <div className={header ? ' fixed w-[100%] z-10 bg-white duration-700 transition' : 'bg-white '}>
-            <div className="navbar h-24    shadow-lg border-b-2 border-[#052c65] rounded-xl ">
+            <div className="navbar h-24    shadow-lg border-b-2 border-[#052c65]  ">
                 {/* navbar */}
                 <div className=' w-full px-4'>
                     <div className="navbar-start ">
@@ -89,16 +99,7 @@ const Navbar = () => {
                             {navItem}
                         </ul>
                     </div>
-                    {/* carts data */}
-                    <Link to={'/carts'}>
-                        <button className='mt-3'>
-                            <div className="relative w-fit">
 
-                                <FaCartShopping className='text-2xl' />
-                                <span className="absolute -right-1 -top-4 flex size-5 items-center justify-center rounded-full bg-red-500 text-center text-[10px] text-white">{carts.length}</span>
-                            </div>
-                        </button>
-                    </Link>
                     <div className="navbar-end  flex ">
                         <div className="dropdown dropdown-end">
 

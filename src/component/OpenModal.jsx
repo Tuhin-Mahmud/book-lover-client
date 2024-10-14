@@ -44,10 +44,10 @@ const OpenModal = ({ details }) => {
     return (
         <div>
             {/* You can open the modal using document.getElementById('ID').showModal() method */}
-            <button className="btn  bg-gray-400 ml-16 hover:bg-orange-300 hover:text-black uppercase" onClick={() => document.getElementById('my_modal_4').showModal()}>Borrow This Book</button>
+            <button className="btn  bg-gray-400 md:ml-16 hover:bg-orange-300 hover:text-black md:uppercase" onClick={() => document.getElementById('my_modal_4').showModal()}>Borrow This Book</button>
             <dialog id="my_modal_4" className="modal">
                 <div className="modal-box w-3/4 md:w-1/4 max-w-5xl ">
-                    <h1 className=" text-xl md:text-2xl text-center text-sky-400 font-serif">Please Borrow this Book</h1>
+                    <h1 className="  md:text-2xl text-center text-sky-400 font-serif">Please Borrow this Book</h1>
                     <div className="divider"></div>
                     <form onSubmit={handleReturn} >
                         <div className="form-control">

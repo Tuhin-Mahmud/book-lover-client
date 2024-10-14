@@ -23,9 +23,9 @@ const BookDetails = () => {
             <div>
                 <div className='flex flex-col md:flex-row my-8'>
 
-                    <img className='md:w-1/3 h-[500px] my-10 rounded-lg ' src={image} alt="" />
+                    <img className='md:w-1/3 md:h-[500px] md:my-10 rounded-lg ' src={image} alt="" />
 
-                    <div className='md:ml-28 p-5 mt-10 '>
+                    <div className='md:ml-28 p-5 md:mt-10 '>
                         <div className='flex flex-col items-center md:items-start'>
                             <h2>{name}</h2>
                             <Rating
@@ -43,25 +43,27 @@ const BookDetails = () => {
                         <p>{description}</p>
                         {/* Availability */}
                         <div className='mt-5'>
-                            <p className='text-lg mb-4'>Availability: <span className='text-orange-500'>In Stock</span></p>
-                            <div className='flex ' >
-                                <div className=''>
-                                    <p className='text-xl font-semibold text-gray-500'>Size:</p>
-                                    <button className='hover:text-orange-400 md:text-xl text-gray-500'>sm</button>
-                                    <button className='mx-5 md:text-xl text-gray-500 hover:text-orange-400'>md</button>
-                                    <button className='hover:text-orange-400 md:text-xl text-gray-500'>xl</button>
-                                </div>
-                                <div className='mx-8'>
-                                    <p className='text-xl text-gray-500 font-semibold'>Color:</p>
-                                    <button className=' bg-gray-500 w-9 h-6 border hover:border-2 hover:border-orange-500'></button>
-                                    <button className=' bg-black w-9 h-6 border mx-3 hover:border-2 hover:border-orange-500'></button>
-                                    <button className=' bg-red-500 w-9 h-6 border hover:border-2 hover:border-orange-500'></button>
-                                </div>
-                                <div>
-                                    <p className=' font-semibold text-xl text-gray-500 '>Material:</p>
-                                    <button className='text-xl text-gray-500 hover:text-orange-400'>Wool</button>
-                                    <button className='mx-3 text-xl text-gray-500 hover:text-orange-400 '>Fiber</button>
-                                    <button className='hover:text-orange-400 text-xl text-gray-500'>Plastic</button>
+                            <p className='text-lg mb-4 hidden md:block'>Availability: <span className='text-orange-500 hidden md:block'>In Stock</span></p>
+                            <div className='hidden md:block'>
+                                <div className='flex ' >
+                                    <div className=''>
+                                        <p className='text-xl font-semibold text-gray-500'>Size:</p>
+                                        <button className='hover:text-orange-400 md:text-xl text-gray-500'>sm</button>
+                                        <button className='md:mx-5 md:text-xl text-gray-500 hover:text-orange-400'>md</button>
+                                        <button className='hover:text-orange-400 md:text-xl text-gray-500'>xl</button>
+                                    </div>
+                                    <div className='mx-8'>
+                                        <p className='text-xl text-gray-500 font-semibold'>Color:</p>
+                                        <button className=' bg-gray-500 w-9 h-6 border hover:border-2 hover:border-orange-500'></button>
+                                        <button className=' bg-black w-9 h-6 border md:mx-3 hover:border-2 hover:border-orange-500'></button>
+                                        <button className=' bg-red-500 w-9 h-6 border hover:border-2 hover:border-orange-500'></button>
+                                    </div>
+                                    <div>
+                                        <p className=' font-semibold text-xl text-gray-500 '>Material:</p>
+                                        <button className='text-xl text-gray-500 hover:text-orange-400'>Wool</button>
+                                        <button className='mx-3 text-xl text-gray-500 hover:text-orange-400 '>Fiber</button>
+                                        <button className='hover:text-orange-400 text-xl text-gray-500'>Plastic</button>
+                                    </div>
                                 </div>
                             </div>
                             <div className='mt-5'>
@@ -69,7 +71,7 @@ const BookDetails = () => {
                                 <div className='flex'>
                                     <OpenModal details={details}></OpenModal>
                                     <Link to={`/readDetails/${_id}`}>
-                                        <button className="btn btn-outline  md:ml-16 ml-3 hover:bg-orange-300 hover:text-black uppercase">Read more...</button>
+                                        <button className="btn btn-outline  md:ml-16 ml-3 hover:bg-orange-300 hover:text-black md:uppercase">Read more...</button>
                                     </Link>
                                 </div>
                                 <p className=' mt-4 text-xl font-bold text-gray-500'>Categories: <span className='text-gray-400'>Adventure, Biographic, Children, Christmas Best, Christmas Hot</span></p>
