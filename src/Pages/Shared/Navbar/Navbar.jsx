@@ -1,12 +1,16 @@
 import { Link, NavLink } from 'react-router-dom';
 import navLogo from '../../../assets/images/logo/nav-with-logo.jpg.jpg'
 import useAuth from '../../../hook/useAuth';
-import nav from '../../../assets/images/logo/user.webp'
+import nav from '../../../assets/images/logo/user.jpg'
 import { useEffect, useState } from 'react';
 import './Header.css';
+import useCarts from '../../../hook/useCarts';
+import { FaCartShopping } from "react-icons/fa6";
+
 
 const Navbar = () => {
     const { user, logOut } = useAuth()
+    const [carts] = useCarts()
 
     const handleLogOut = () => {
         logOut()
@@ -85,8 +89,19 @@ const Navbar = () => {
                             {navItem}
                         </ul>
                     </div>
+                    {/* carts data */}
+                    <Link to={'/carts'}>
+                        <button className='mt-3'>
+                            <div className="relative w-fit">
+
+                                <FaCartShopping className='text-2xl' />
+                                <span className="absolute -right-1 -top-4 flex size-5 items-center justify-center rounded-full bg-red-500 text-center text-[10px] text-white">{carts.length}</span>
+                            </div>
+                        </button>
+                    </Link>
                     <div className="navbar-end  flex ">
                         <div className="dropdown dropdown-end">
+
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar border-2 border-red-300 ">
                                 <div className="w-10 rounded-full">
                                     <img className='w-12 h-12' src={user?.photoURL ? user?.photoURL : nav} alt="" />

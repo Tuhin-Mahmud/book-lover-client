@@ -14,6 +14,7 @@ import ReadDetails from "../Pages/Home/Books/ReadDetails";
 import UpdateBook from "../Pages/AllBooks/UpdateBook";
 import About from "../Pages/About/About";
 import AddToCartDetails from "../Pages/AddToCartDetails/AddToCartDetails";
+import Carts from "../Pages/Carts/Carts";
 
 
 
@@ -78,6 +79,11 @@ const router = createBrowserRouter([
             {
                 path: '/about',
                 element: <About />,
+
+            },
+            {
+                path: '/carts',
+                element: <Carts />,
 
             },
         ]
