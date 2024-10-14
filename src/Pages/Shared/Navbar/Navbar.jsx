@@ -1,5 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
-import navLogo from '../../../assets/images/logo/nav-with-logo.jpg.jpg'
+import navLogo from '../../../assets/images/logo/navLogo.jpg'
 import useAuth from '../../../hook/useAuth';
 import nav from '../../../assets/images/logo/user.jpg'
 import { useEffect, useState } from 'react';
