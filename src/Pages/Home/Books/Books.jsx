@@ -1,18 +1,20 @@
 import { useEffect, useState } from "react";
 import BooksCard from "./BooksCard";
-import useAxiosPublic from "../../../hook/useAxiosPublic";
+
 import Container from "../../../component/common/Container";
 import HeaderText from "../../../component/common/HeaderText";
+import useBooks from "../../../hook/useBooks";
 
 const Books = () => {
-    const [books, setBooks] = useState([])
-    const axiosPublic = useAxiosPublic()
-    useEffect(() => {
-        axiosPublic.get('/books')
-            .then(res => {
-                setBooks(res.data)
-            })
-    }, [axiosPublic])
+    const [books] = useBooks()
+    // const [books, setBooks] = useState([])
+    // const axiosPublic = useAxiosPublic()
+    // useEffect(() => {
+    //     axiosPublic.get('/books')
+    //         .then(res => {
+    //             setBooks(res.data)
+    //         })
+    // }, [axiosPublic])
 
 
     return (

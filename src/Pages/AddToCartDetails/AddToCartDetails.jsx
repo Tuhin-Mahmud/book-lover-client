@@ -19,6 +19,8 @@ import userImg from '../../assets/images/logo/user.jpg'
 import Swal from "sweetalert2";
 
 import Loader from "../../component/Loader/Loader";
+import useBooks from "../../hook/useBooks";
+import BooksCard from "../Home/Books/BooksCard";
 
 
 
@@ -26,6 +28,8 @@ import Loader from "../../component/Loader/Loader";
 const AddToCartDetails = () => {
     const [comment, refetch, isLoading] = useComment()
     const location = useLocation()
+    const [books] = useBooks()
+    console.log(books);
     // const [carts, refetch] = useCarts()
     const navigate = useNavigate()
     const { user } = useAuth()
@@ -339,6 +343,23 @@ const AddToCartDetails = () => {
                     </TabPanel>
                 </Tabs>
             </div>
+            {/* related book */}
+            <div className=" mt-6 md:mt-10">
+                {/* <h1 className="text-5xl text-red-500 mb-4 text-center">Please Choose Your Books</h1> */}
+                <div className="text-center  mb-3">
+                    <h1 className="text-xl md:text-3xl font-medium">Related Books</h1>
+                    <p className="text-gray-500">Books have always been a gateway to knowledge, adventure, and self-discovery. </p>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {
+                        books.map(book => <BooksCard
+                            key={book._id}
+                            book={book}
+                        ></BooksCard>)
+                    }
+                </div>
+            </div>
+
 
         </Container >
     );
