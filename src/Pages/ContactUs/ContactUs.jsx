@@ -6,6 +6,7 @@ const ContactUs = () => {
     const [inputValue, setInputValue] = useState('')
     const handleSubmit = e => {
         e.preventDefault()
+        console.log('click');
 
         if (inputValue) {
             toast.success('Thank You for our connect.')

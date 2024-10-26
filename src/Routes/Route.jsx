@@ -15,6 +15,9 @@ import UpdateBook from "../Pages/AllBooks/UpdateBook";
 import About from "../Pages/About/About";
 import AddToCartDetails from "../Pages/AddToCartDetails/AddToCartDetails";
 import Carts from "../Pages/Carts/Carts";
+import LiveChat from "../Pages/LiveChat/LiveChat";
+import RegisterNow from "../Pages/Home/RegisterNow/RegisterNow";
+import BookingRegistration from "../Pages/BookingRegistration/BookingRegistration";
 
 
 
@@ -85,6 +88,18 @@ const router = createBrowserRouter([
                 path: '/carts',
                 element: <Carts />,
 
+            },
+            {
+                path: '/liveChat',
+                element: <LiveChat />
+            },
+            {
+                path: '/registerNow',
+                element: <RegisterNow />
+            },
+            {
+                path: '/bookingRegistration',
+                element: <BookingRegistration />
             },
         ]
     },

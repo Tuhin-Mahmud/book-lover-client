@@ -33,7 +33,7 @@ const About = () => {
                         {
                             fold ? (
                                 <>
-                                    <span onClick={() => setFold(!fold)} className="text-blue-500">Read more Please...</span>
+                                    <span onClick={() => setFold(!fold)} className="text-blue-500 cursor-pointer">Read more Please...</span>
                                 </>
                             )
                                 :
@@ -43,7 +43,7 @@ const About = () => {
                                             digital (soft copies) materials, and may be a physical location, a virtual space, or both.
                                         </p>
                                         <span onClick={() => setFold(!fold)}
-                                            className="text-blue-500 " >Read Lease</span>
+                                            className="text-blue-500 cursor-pointer" >Read Lease</span>
                                     </>
                                 )
                         }

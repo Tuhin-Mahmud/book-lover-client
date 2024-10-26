@@ -61,9 +61,11 @@ const TopNavbar = () => {
                     </div>
                     {/* ------------- */}
                     <div className="flex items-center gap-4 cursor-pointer">
-                        <div className="flex gap-2 items-center">
-                            <IoChatbubblesSharp />
-                            Live Chat
+                        <div className="">
+                            <Link to={'/liveChat'} className="flex gap-2 items-center">
+                                <IoChatbubblesSharp />
+                                Live Chat
+                            </Link>
                         </div>
                         <div className="flex gap-2 items-center">
                             <FaRegUser />

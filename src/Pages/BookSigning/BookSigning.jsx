@@ -3,9 +3,9 @@ import Container from "../../component/common/Container";
 import { toast } from "react-toastify";
 
 const BookSigning = () => {
-    const handleRegister = () => {
-        toast.success('Register Successfully done.')
-    }
+    // const handleRegister = () => {
+    //     toast.success('Register Successfully done.')
+    // }
 
     return (
         <Container>
@@ -19,9 +19,11 @@ const BookSigning = () => {
                     <div className="border space-y-10">
                         <h2 className="text-5xl font-thin">Next Event</h2>
                         <div className="divider">or</div>
-                        <button onClick={handleRegister}>
-                            <Link to={'/'} className="border border-sky-300 text-lg font-mono px-5 py-2 rounded hover:bg-sky-400 duration-500 ">Register Now</Link>
+
+                        <button >
+                            <Link to={'/registerNow'} className="border border-sky-300 text-lg font-mono px-5 py-2 rounded hover:bg-sky-400 duration-500 ">Register Now</Link>
                         </button>
+
                     </div>
                     <div className="border space-y-4 ">
                         <h2 className="text-5xl font-thin">Where</h2>

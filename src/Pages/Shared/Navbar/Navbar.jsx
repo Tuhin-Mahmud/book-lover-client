@@ -36,6 +36,7 @@ const Navbar = () => {
         <li>
             <NavLink className={({ isActive }) => isActive ? 'underline text-red-400 ' : 'hover:text-blue-400'} to='/about'>About</NavLink>
         </li>
+
         {
             user?.email ? <button className='' onClick={handleLogOut} > LogOut</button> :
                 <li><NavLink className={({ isActive }) => isActive ? 'underline text-blue-400 ' : 'hover:text-blue-400'} to='/logIn'>Login</NavLink></li>
@@ -113,7 +114,9 @@ const Navbar = () => {
                                     {user?.displayName}
 
                                 </span>
-
+                                <h2 className='text-red-500 flex justify-center items-center border rounded py-1'>
+                                    <NavLink className={({ isActive }) => isActive ? 'underline text-red-400' : 'hover:text-blue-400 text-center'} to='/bookingRegistration'>BookingRegistration</NavLink>
+                                </h2>
                                 <p className='text-sm'>
                                     {user?.email}
                                 </p>

@@ -52,10 +52,10 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className="divider divider-primary"></div>
+            <div className="divider divider-primary "></div>
 
             {/* -----main footer------ */}
-            <div className=' '>
+            <div className=''>
                 <div className=" md:flex items-center justify-evenly  text-lg  py-8 ">
                     <div className='flex justify-around md:justify-evenly w-full '>
                         <nav className='hidden lg:block'>
