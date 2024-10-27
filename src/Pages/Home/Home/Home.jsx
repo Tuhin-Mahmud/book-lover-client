@@ -1,5 +1,6 @@
 import BookSigning from "../../BookSigning/BookSigning";
 import ContactUs from "../../ContactUs/ContactUs";
+import GetDiscount from "../../GetDiscount/GetDiscount";
 import TopBooks from "../../TopBooks/TopBooks";
 import Authors from "../Authors/Authors";
 import Banner from "../Banner/Banner";
@@ -18,6 +19,7 @@ const Home = () => {
             <Purchase />
             <TopBooks />
             <BookSigning />
+            <GetDiscount />
             <Faq></Faq>
             <ContactUs />
             <Authors />

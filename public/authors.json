@@ -1,21 +1,17 @@
 [
     {
-        "id": 1,
-        "image": "https://i.ibb.co/Xj55sqJ/gazza.jpg",
+        "image": "https://i.ibb.co.com/Xj55sqJ/gazza.jpg",
         "author_name": "Ghassan Kanafani"
     },
     {
-        "id": 2,
-        "author_image": "https://i.ibb.co/khKWrQH/F-Scott-Fitzgerald.jpg",
+        "author_image": "https://i.ibb.co.com/LntqLmv/bookauthor2.jpg",
         "author_name": "Khaled Hosseini"
     },
     {
-        "id": 3,
-        "image": "https://i.ibb.co/kDsJ3B8/tariq-ramadan.jpg",
+        "image": "https://i.ibb.co.com/khKWrQH/F-Scott-Fitzgerald.jpg",
         "author_name": "Tariq Ramadan"
     },
     {
-        "id": 4,
         "image": "https://i.ibb.co/gtFd2MK/Emil-Habiby.jpg",
         "author_name": "Emile Habiby"
     }

@@ -18,6 +18,7 @@ import Carts from "../Pages/Carts/Carts";
 import LiveChat from "../Pages/LiveChat/LiveChat";
 import RegisterNow from "../Pages/Home/RegisterNow/RegisterNow";
 import BookingRegistration from "../Pages/BookingRegistration/BookingRegistration";
+import ShoppingBook from "../Pages/ShoppingBook/ShoppingBook";
 
 
 
@@ -100,6 +101,10 @@ const router = createBrowserRouter([
             {
                 path: '/bookingRegistration',
                 element: <BookingRegistration />
+            },
+            {
+                path: '/shopping',
+                element: <ShoppingBook />
             },
         ]
     },

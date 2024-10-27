@@ -17,7 +17,7 @@ const Authors = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 ">
                     {
                         authors.map(author => <AuthorsCard
-                            key={author.id}
+                            key={author._id}
                             author={author}
                         ></AuthorsCard>)
                     }

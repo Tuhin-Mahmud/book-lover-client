@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 const CategoryBook = ({ cat }) => {
 
-    console.log(cat);
     const { _id, author_name, name, image, category, rating, price } = cat || {};
     return (
         <div>

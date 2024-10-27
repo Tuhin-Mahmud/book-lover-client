@@ -2,10 +2,14 @@ import AllBookCart from "./AllBookCart";
 import useCateBooks from "../../hook/useCateBooks";
 import Container from "../../component/common/Container";
 import HeaderText from "../../component/common/HeaderText";
+import Loader from "../../component/Loader/Loader";
 
 const AllBooks = () => {
-    const [categoriesBook] = useCateBooks()
+    const [categoriesBook, isLoading] = useCateBooks()
 
+    if (isLoading) {
+        return <Loader />
+    }
 
     return (
         <Container>
